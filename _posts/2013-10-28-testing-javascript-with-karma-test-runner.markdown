@@ -26,15 +26,15 @@ For this example I'll use [Karma runner](http://karma-runner.github.io/0.10/inde
 
 ### Installation
 
-```bash
+{% highlight bash %}
 npm install -g karma
 karma start
-```
+{% endhighlight %}
 
 ### Configuration file
 This is an example. Put this into a root of your project and name it `karma.conf.js`.
 
-```javascript
+{% highlight javascript %}
 module.exports = function(config) {
   config.set({
     // base path, that will be used to resolve files
@@ -102,7 +102,7 @@ module.exports = function(config) {
     ]
   });
 };
-```
+{% endhighlight %}
 
 ### HTML fixtures
 
@@ -113,15 +113,15 @@ We are only interested in `h1` element
 
 *Example file*
 
-```html
+{% highlight html %}
 <h1>I can see in your machine</h1>
-```
+{% endhighlight %}
 
 ### Test
 
 The code to test your application code is written for [Jasmine testing framework](http://pivotal.github.io/jasmine/)
 
-```javascript
+{% highlight javascript %}
 describe("D0m1n470r", function() {
   it("will change header text", function() {
     var $header = $("h1");
@@ -130,17 +130,17 @@ describe("D0m1n470r", function() {
     expect($header.text()).toBe("No");
   });
 });
-```
+{% endhighlight %}
 
 ### Implementation
 
 Now we can write implementation code for clickCallback
 
-```javascript
+{% highlight javascript %}
 var clickCallback = function(selector, text) {
   $(selector).text(text);
 };
-```
+{% endhighlight %}
 
 ### JSbin
 <a class="jsbin-embed" href="http://jsbin.com/uRiCACU/1/embed?html,js,output">JS Bin</a>

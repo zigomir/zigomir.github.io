@@ -19,9 +19,9 @@ for auto-completion. To make it reusable we will do an `Ember component`.
 
 Handlebars template for rendering this component only needs to render one input
 
-```html
+{% highlight html %}
 <input type="text" />
-```
+{% endhighlight %}
 
 By convention we need to save the template in
 `templates/components/repository-finder.hbs` or give it
@@ -48,7 +48,7 @@ First we need to trigger an action inside a component. This is done with
 or `selected`:
 
 `App.RepositoryFinderComponent`
-```javascript
+{% highlight javascript %}
 // omitted code
 .on(
     'typeahead:autocompleted typeahead:selected',
@@ -58,13 +58,13 @@ or `selected`:
     }
   )
 // omitted code
-```
+{% endhighlight %}
 
 This will trigger action named `action` inside component. Sending action from
 component to outside world is done with `sendAction`...
 
 `App.RepositoryFinderComponent`
-```javascript
+{% highlight javascript %}
 // omitted code
 actions: {
   action: function() {
@@ -72,13 +72,13 @@ actions: {
   }
 }
 // omitted code
-```
+{% endhighlight %}
 
 ...which is then sent up and will be caught by action that we specified in
 template as a component attribute. In our example it is `showSelectedRepo`
 
 `App.ApplicationController`
-```javascript
+{% highlight javascript %}
 // omitted code
 actions: {
   showSelectedRepo: function(value) {
@@ -86,7 +86,7 @@ actions: {
   }
 }
 // omitted code
-```
+{% endhighlight %}
 
 In our controller we just do whatever we want with caught action and the values
 that were propagated with it.
@@ -97,17 +97,17 @@ If you try to use `jQuery plug-in` within Ember views or components you need
 to do it when Ember actually inserts a view / component element into the DOM.
 Approach you're probably most used to, won't work in Ember
 
-```javascript
+{% highlight javascript %}
 $(function(){
   // your plug-in initialize code
 });
-```
+{% endhighlight %}
 
 You need to do it inside your view / component on `didInsertElement` event.
 
 Whole `RepositoryFinderComponent` code looks like this
 
-```javascript
+{% highlight javascript %}
 App.RepositoryFinderComponent = Ember.Component.extend({
   onRenderComponent: function() {
     var self = this;
@@ -136,7 +136,7 @@ App.RepositoryFinderComponent = Ember.Component.extend({
   }
 
 });
-```
+{% endhighlight %}
 
 Full example is available here
 
