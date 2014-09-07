@@ -2,7 +2,7 @@
 title: In reverse - my daily grind
 email: zigomir@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Thins I thought I wanted to share.
+  Things I thought I wanted to share.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.zigomir.com" # the base hostname & protocol for your site
