@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+if ARGV[0] == nil
+  puts 'you forgot a post title as first argument'
+  exit 1
+end
+
+date      = `date +"%Y-%m-%d"`
+date      = date.strip
+title     = ARGV[0]
+post_name = ARGV[0].to_s.downcase.gsub(/\s/, '-')
+filename  = "_posts/#{date}-#{post_name}.markdown"
+
+
+head = %{---
+layout: post
+title: "#{title}"
+date: #{date}
+comments: true
+categories: tag1 tag2 tag3
+---
+
+}
+
+File.open(filename, 'w') { |file| file.write(head) }
