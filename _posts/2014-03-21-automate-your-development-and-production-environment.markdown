@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "automate your development and production environment"
+title: "Automate your development and production environment"
 date: 2014-03-23 21:16
 comments: true
 categories: vagrant ruby digital-ocean
@@ -14,7 +14,7 @@ I started working on side projects for fun around 2009. It was because of [Googl
 
 ### Chef + Vagrant + Digital Ocean = development + production environment
 
-Fast forward 2014. 
+Fast forward 2014.
 
 Why put in all the effort and not just spin up GAE or Heroku?
 
@@ -38,7 +38,7 @@ By the way, these scripts, are meant to be saved in your source code repository.
 
 ### Where do I start?
 
-You can fork or take a look at my example on how to do this for 
+You can fork or take a look at my example on how to do this for
 [Ruby/Rails/Postgres/Passenger/Apache environment](https://github.com/zigomir/do_ruby).
 
 I hope this might help you to get your application from an idea to publicly available service. Publishing my applications online is what gave me most of motivation back in my `Google App Engine` days.
