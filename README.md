@@ -9,5 +9,5 @@ rbenv rehash
 
 ```bash
 ./new "Blog Post Title"
-jekyll serve
+bundle exec jekyll serve
 ```
