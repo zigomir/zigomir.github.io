@@ -8,7 +8,7 @@ end
 date      = `date +"%Y-%m-%d"`
 date      = date.strip
 title     = ARGV[0]
-post_name = ARGV[0].to_s.downcase.gsub(/\s/, '-')
+post_name = ARGV[0].to_s.downcase.gsub(/\s/, '-').gsub(/'/, '')
 filename  = "_posts/#{date}-#{post_name}.markdown"
 
 
