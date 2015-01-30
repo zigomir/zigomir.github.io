@@ -8,7 +8,7 @@ end
 date      = `date +"%Y-%m-%d"`
 date      = date.strip
 title     = ARGV[0]
-post_name = ARGV[0].to_s.downcase.gsub(/\s/, '-').gsub(/'/, '')
+post_name = ARGV[0].to_s.downcase.gsub(/\s/, '-').gsub(/'/, '').gsub(/,/, '')
 filename  = "_posts/#{date}-#{post_name}.markdown"
 
 
@@ -16,7 +16,6 @@ head = %{---
 layout: post
 title: "#{title}"
 date: #{date}
-comments: true
 categories: tag1 tag2 tag3
 ---
 
