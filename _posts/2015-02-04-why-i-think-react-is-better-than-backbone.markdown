@@ -17,9 +17,8 @@ of renders on both examples. Click on `Run with JS` on bottom right of each
 I suspect Backbone's bottleneck is coming from `underscore`s
 building of strings and then shoving them into the DOM via `$.html`.
 I am not really sure how React handles this example (we know it must update all non-selected
-items class) and still preserve good performance. I'd guess it's because it
+items class) and still preserves good performance. I'd guess it's because it
 doesn't need to juggle with giant strings like Backbone.
-
 
 ### Backbone
 
@@ -64,11 +63,10 @@ for a fact, it's not all roses.
 
 Most hard problems comes because object state can be mutated from anywhere.
 Also, Backbone doesn't help you with state separation. State is creeping into
-models and views from many places. We are (at least I know I am) really bad
-at holding the state of where changes might come from.
+models and views from many places. We are (at least I am) really bad
+at holding the state, of where changes might come from, in our heads.
 
-If you're a bit more interested in React now, I suggestion you to see these two
-videos
+If you're a bit more interested in React now, I suggest you to watch this videos
 
 - [Steven Luscher: Decomplexifying Code with React](https://www.youtube.com/watch?v=rI0GQc__0SM)
 - [React.js Conf 2015 - Immutable Data and React](https://www.youtube.com/watch?v=I7IdS-PbEgI)
