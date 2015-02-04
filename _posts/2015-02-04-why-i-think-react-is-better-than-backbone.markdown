@@ -9,6 +9,18 @@ A fellow said that React doesn't look anything new to him. I'll try to explain
 the differences on a fairly simple example
 [I used before](http://blog.zigomir.com/react.js/jquery/2015/01/11/jquery-versus-react-thinking.html).
 
+## Performance
+
+Performance is much better with React. We're doing same number
+of renders on both examples. Click on `Run with JS` on bottom right of each
+`JSBin` example, and then click on the rendered bags. There are 5000 of them.
+I suspect Backbone's bottleneck is coming from `underscore`s
+building of strings and then shoving them into the DOM via `$.html`.
+I am not really sure how React handles this example (we know it must update all non-selected
+items class) and still preserve good performance. I'd guess it's because it
+doesn't need to juggle with giant strings like Backbone.
+
+
 ### Backbone
 
 <a class="jsbin-embed" href="http://jsbin.com/qaxasa/2/embed?js,console,output">Backbone example/a>
@@ -42,17 +54,6 @@ component holds (also encapsulates) it. In React applications you never ask for
 state of another component
 - for model we use plain JavaScript array
 - code is even simpler and more declarative
-
-## Performance
-
-Performance is much better with React. We're doing same number
-of renders on both examples. Click on `Run with JS` on bottom right of each
-`JSBin` example, and then click on the rendered bags. There are 5000 of them.
-I suspect Backbone's bottleneck is coming from `underscore`s
-building of strings and then shoving them into the DOM via `$.html`.
-I am not really sure how React handles this example (we know it must update all non-selected
-items class) and still preserve good performance. I'd guess it's because it
-doesn't need to juggle with giant strings like Backbone.
 
 ## Conclusion
 
