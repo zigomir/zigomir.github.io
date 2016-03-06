@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Know your tools"
+title: "Know your tools |> Less is more |> Fight JS fatigue |> Vue.js"
 date: 2016-02-15
 categories: javascript javascript-fatigue vue vue-cli
 ---
 
 ## Problem
 
-Have you tried turning it...googling [react starter kit](https://www.google.si/search?q=react+starter+kit&oq=react+starter+kit&aqs=chrome..69i57j0l5.2209j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#)?
+Have you tried turning googling [react starter kit](https://www.google.si/search?q=react+starter+kit&oq=react+starter+kit&aqs=chrome..69i57j0l5.2209j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#)?
 
 Do you know how [ember-cli](http://ember-cli.com/) works? Do you really want or need bower?
 
@@ -15,7 +15,7 @@ Some people joke how setting up `grunt` or `gulp` takes a week or more. How many
 
 ## Possible solution (that works for me at the moment)
 
-1. Learn [Vue](http://vuejs.org/); read [guides](http://vuejs.org/guide/).
+1. Check out [Vue](http://vuejs.org/); read [guides](http://vuejs.org/guide/).
 
 2. Implement component(s) in [codepen](http://codepen.io/) or [JS Bin](https://jsbin.com/?html,js). You can fork my [Vue Starter codepen](http://codepen.io/zigomir/pen/XXoZyp)
 
