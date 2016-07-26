@@ -4,6 +4,7 @@ title: "Testing JavaScript with Karma test runner"
 date: 2013-10-28 21:04
 published: false
 categories: javascript testing
+no_turbolinks: true
 ---
 
 Even jQuery spaghetti can be tested to some extent.

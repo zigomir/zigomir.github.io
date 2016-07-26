@@ -3,6 +3,7 @@ layout: post
 title: "Ember components"
 date: 2014-01-30 15:05
 categories: ember.js javascript components ember-components
+no_turbolinks: true
 ---
 
 You want a reusable component which supports auto-completion search on user's

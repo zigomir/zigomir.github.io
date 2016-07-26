@@ -4,6 +4,7 @@ title: "Ember on fire(base)"
 date: 2014-02-09 21:12
 comments: true
 categories: ember.js javascript firebase baas noBackend real-time
+no_turbolinks: true
 ---
 
 In this post I'll show you how to create a simple Ember TODO™ app

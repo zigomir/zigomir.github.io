@@ -3,6 +3,7 @@ layout: post
 title: "Why I think React is better than Backbone"
 date: 2015-02-04
 categories: react versus backbone javascript
+no_turbolinks: true
 ---
 
 A fellow said that React doesn't look anything new to him. I'll try to explain
@@ -22,7 +23,7 @@ doesn't need to juggle with giant strings like Backbone.
 
 ### Backbone
 
-<a class="jsbin-embed" href="http://jsbin.com/qaxasa/2/embed?js,console,output">Backbone example/a>
+<a class="jsbin-embed" href="http://jsbin.com/qaxasa/2/embed?js,console,output">Backbone example</a>
 <script src="http://static.jsbin.com/js/embed.js"></script>
 
 ## Code reasoning
